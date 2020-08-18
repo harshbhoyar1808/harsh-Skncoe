@@ -1,0 +1,537 @@
+[
+    {
+        "id": "4d8e304e.2e59e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4660b9d9.86ea78",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Palatino Linotype,Palatino,Book Antiqua,serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#0ad8db",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2bc701e5.55e3ce",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Registration form",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f2f11f9a.63895",
+        "type": "ui_group",
+        "z": "",
+        "name": "Reg form",
+        "tab": "2bc701e5.55e3ce",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d092991a.82d3e8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Login form",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f9993814.3d9328",
+        "type": "ui_group",
+        "z": "",
+        "name": "Login",
+        "tab": "d092991a.82d3e8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b2f07168.cce8e",
+        "type": "ui_tab",
+        "z": "",
+        "name": "CustomerHelp",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "20b7aab4.75c166",
+        "type": "ui_group",
+        "z": "",
+        "name": "Bot",
+        "tab": "b2f07168.cce8e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "76eab97.6cbc748",
+        "type": "ui_form",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "label": "",
+        "group": "f2f11f9a.63895",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Enter name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Enter Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Enter password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "email": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "create",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "cf78df26.b8571",
+                "701168e9.c7f4e8"
+            ]
+        ]
+    },
+    {
+        "id": "cf78df26.b8571",
+        "type": "debug",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "701168e9.c7f4e8",
+        "type": "function",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "func": "msg.payload-{\n    _id:msg.payload.email,\n    Name:msg.payload.name,\n    Emailid:msg.payload.email,\n    password:msg.payload.password,\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 179,
+        "wires": [
+            [
+                "aed05d9b.a1a47"
+            ]
+        ]
+    },
+    {
+        "id": "aed05d9b.a1a47",
+        "type": "cloudant out",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "cloudant": "",
+        "database": "sample",
+        "service": "node-red-jabgz-2020--cloudant-1597404479777-42055",
+        "payonly": true,
+        "operation": "insert",
+        "x": 630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "f9ad6da8.8b286",
+        "type": "ui_form",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "label": "",
+        "group": "f9993814.3d9328",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Enter Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Enter password",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "c5c6e5c2.e71108"
+            ]
+        ]
+    },
+    {
+        "id": "c5c6e5c2.e71108",
+        "type": "function",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "func": "global.set('emailid',msg.payload.email);\nglobal.set('password',msg.payload.password);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "279e047f.c4847c"
+            ]
+        ]
+    },
+    {
+        "id": "279e047f.c4847c",
+        "type": "function",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "func": "global.set('emailid',msg.payload.email);\nglobal.set('password',msg.payload.password);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "f796ad3f.33ad2"
+            ]
+        ]
+    },
+    {
+        "id": "f796ad3f.33ad2",
+        "type": "cloudant in",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "cloudant": "",
+        "database": "sample",
+        "service": "node-red-jabgz-2020--cloudant-1597404479777-42055",
+        "search": "_idx_",
+        "design": "user",
+        "index": "user",
+        "x": 580,
+        "y": 360,
+        "wires": [
+            [
+                "bd0bce79.06f0a"
+            ]
+        ]
+    },
+    {
+        "id": "bd0bce79.06f0a",
+        "type": "function",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 760,
+        "y": 360,
+        "wires": [
+            [
+                "269c9baf.d750c4"
+            ]
+        ]
+    },
+    {
+        "id": "269c9baf.d750c4",
+        "type": "ui_text",
+        "z": "4d8e304e.2e59e",
+        "group": "f9993814.3d9328",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 950,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "82045bc5.de6298",
+        "type": "ui_form",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "label": "",
+        "group": "20b7aab4.75c166",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "User input ",
+                "value": "input",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "input": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 160,
+        "y": 500,
+        "wires": [
+            [
+                "34f4cb02.4f6704"
+            ]
+        ]
+    },
+    {
+        "id": "34f4cb02.4f6704",
+        "type": "function",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "func": "msg.payload = msg.payload.input;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "d24835ab.73b688"
+            ]
+        ]
+    },
+    {
+        "id": "d24835ab.73b688",
+        "type": "watson-conversation-v1",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "workspaceid": "eec843b8-dcab-4e7d-86f4-0e229b30648a",
+        "multiuser": false,
+        "context": true,
+        "empty-payload": false,
+        "service-endpoint": "https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/640ac748-beb1-459a-8ec0-bcbfc7eb6613",
+        "timeout": "",
+        "optout-learning": false,
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "d78cf071.23b54",
+                "ee6e0041.36a23"
+            ]
+        ]
+    },
+    {
+        "id": "ee6e0041.36a23",
+        "type": "debug",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d78cf071.23b54",
+        "type": "function",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "func": "msg.payload = msg.payload.output.generic[0].text;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 780,
+        "y": 500,
+        "wires": [
+            [
+                "84a9bf4d.42772",
+                "a22de36c.3a3fc"
+            ]
+        ]
+    },
+    {
+        "id": "84a9bf4d.42772",
+        "type": "ui_text",
+        "z": "4d8e304e.2e59e",
+        "group": "20b7aab4.75c166",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "name": "",
+        "label": "Bot response",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 950,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a22de36c.3a3fc",
+        "type": "ui_audio",
+        "z": "4d8e304e.2e59e",
+        "name": "",
+        "group": "20b7aab4.75c166",
+        "voice": "",
+        "always": "",
+        "x": 980,
+        "y": 560,
+        "wires": []
+    }
+]
